@@ -9,7 +9,7 @@ test('test', async ({ page }) => {
   await page.getByPlaceholder('Cari Produk di Evermos…').fill('kopi');
   await page.getByPlaceholder('Cari Produk di Evermos…').press('Enter');
 
-  await page.getByRole('link', { name: 'Kopi-Aren' }).click();
+  await page.getByRole('link', { name: 'Kopi Aren' }).click();
   await page.getByRole('link', { name: 'Beli Sekarang' }).click();
   await expect(page.getByRole('heading', { name: 'Detail Pengiriman' })).toBeVisible();
 
